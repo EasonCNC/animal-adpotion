@@ -1,7 +1,7 @@
-python manage.py makemigration
+<code>python manage.py makemigration</code>
 
-python manage.py migration
+<code>python manage.py migration</code>
 
-python manage.py collectstatic
+<code>python manage.py collectstatic</code>
 
-python manage.py runserver
+<code>python manage.py runserver</code>
