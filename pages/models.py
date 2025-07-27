@@ -14,7 +14,8 @@ class Animal(models.Model):
     CAT = "cat"
     DOG = "dog"
     RABBIT = "rabbit"
-    PET_TYPES = {CAT: "cat", DOG: "dog", RABBIT: "rabbit"}
+    FOX = "fox"
+    PET_TYPES = {CAT: "cat", DOG: "dog", RABBIT: "rabbit", FOX:"fox"}
     pet_type = models.CharField(max_length=10, choices= PET_TYPES)
     image = models.ImageField(upload_to='animal_images/', null=True, blank=True)
 
@@ -52,4 +53,15 @@ class Rabbit(Animal):
 
     def __str__(self):
         return f'{self.name} - Rabbit'
+
+class Fox(Animal):
+    breed = models.CharField(max_length=100, null=True, blank=True)
+
+    def save(self, *args, **kwargs):
+        self.type = "Fox"
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f'{self.name} - Fox'
+
 
