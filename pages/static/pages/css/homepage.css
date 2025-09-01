@@ -1,18 +1,15 @@
-/* Resetting margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -45,7 +42,6 @@ body {
     padding: 5px 10px;
 }
 
-/* Hero Section */
 .hero {
     background-image: url('https://via.placeholder.com/1600x600');
     background-size: cover;
@@ -100,7 +96,6 @@ body {
     background-color: #005f8a;
 }
 
-/* Featured Pets Section */
 .featured-pets {
     padding: 20px 20px;
     text-align: center;
@@ -126,7 +121,7 @@ body {
     padding: 15px;
 }
 
-.pet-card a{
+.pet-card a {
     text-decoration: none !important;
     color: inherit;
 }
@@ -149,7 +144,6 @@ body {
     color: #777;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;

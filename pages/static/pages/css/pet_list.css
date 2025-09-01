@@ -7,13 +7,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 24px; /* gap between cards */
+    gap: 24px;
     padding: 20px;
 }
 
 
 .pet-card {
-    width: calc((100% - 72px) / 4); /* 4 cards per row with 3 gaps of 24px */
+    width: calc((100% - 72px) / 4);
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -46,6 +46,6 @@
 
 .view-btn:hover {
     background-color: #0056b3;
-    color: white; /* ✅ Keep text white on hover */
+    color: white;
 }
 
