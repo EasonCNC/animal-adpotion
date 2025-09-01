@@ -1,9 +1,8 @@
 from django.db import models
 
-# Base class for common animal attributes
 class Animal(models.Model):
     name = models.CharField(max_length=100)
-    age = models.PositiveIntegerField()  # Use PositiveIntegerField for age
+    age = models.PositiveIntegerField() 
     GENDER_CHOICES = [
         ('M', 'Male'),
         ('F', 'Female'),
@@ -20,7 +19,7 @@ class Animal(models.Model):
     image = models.ImageField(upload_to='animal_images/', null=True, blank=True)
 
     class Meta:
-        abstract = True  # This class is just for inheritance, no table will be created
+        abstract = True
 
 class Cat(Animal):
     breed = models.CharField(max_length=100, null=True, blank=True)
